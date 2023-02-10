@@ -1,0 +1,72 @@
+/* general body settings */
+body {
+  font-family: var(--ff);
+  font-size: var(--fs);
+  background-color: var(--bgcolor);
+  color: var(--font-color-prim);
+}
+
+ ul {
+  list-style: none;
+} 
+
+.address__link,
+.address__street,
+.nav__link,
+.contact__link {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.section {
+  padding: 94px 0;
+}
+.center {
+  text-align: center;
+}
+.img--block {
+  display: block;
+} 
+/* PSEUDOCLASSES */
+.hover:hover,
+.hover:focus-visible {
+  background-color: var(--bgcolor-button-filter-hover);
+  transition: background-color $timing-function;
+  color: var(--font-color-white);
+  transition: color $timing-function;
+  box-shadow: var(--shadow-button-menu-hover);
+  transition: box-shadow $timing-function;
+}
+/* PAGE ACTIVE */
+.page--active {
+  position: relative;
+
+  &::after {
+  content: "";
+  position: absolute;
+  top: 45.8px; 
+  bottom: -31.4px;
+  left: 0; 
+  right: 0;
+  background-color: var(--bgcolor-page-active);
+  border-radius: 2px;
+  width:53px;
+  height:4px;
+}
+}
+.input--reset {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}

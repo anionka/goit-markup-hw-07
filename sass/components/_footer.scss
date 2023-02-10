@@ -1,0 +1,42 @@
+.footer {
+  background-color: var(--bgcolor-dark);
+
+&__arrange {
+  display: flex;
+  align-items: baseline;
+}
+&__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+
+  &:nth-child(2) {
+  margin-right: 78px;
+}
+}
+&__title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--font-color-white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+}
+
+.footer.section {
+  padding: 60px 0;
+}
+
+.footer .logo__sec-footer {
+  color: var(--font-color-white);
+}
+
+.footer .smedia__logo {
+  background-color: var(--bgcolor-smedia-footer);
+  --color5: var(--font-color-white);
+}
+.footer .smedia__logo:hover {
+  background-color: var(--font-color-hover);
+}
